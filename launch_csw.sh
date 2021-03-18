@@ -1,1 +1,1 @@
-nohup csw-services start > csw.log &
+nohup csw-services start > logs/csw.log &

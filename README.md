@@ -1,2 +1,2 @@
-# iris_drs_assembly
+# IRIS DRS Assembly
 TMT-IRIS Data Reduction System Assembly
