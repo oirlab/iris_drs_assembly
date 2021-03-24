@@ -1,1 +1,1 @@
-killall java
+pkill -f "csw-services"
