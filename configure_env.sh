@@ -1,0 +1,1 @@
+export INTERFACE_NAME=eth0

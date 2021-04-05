@@ -22,3 +22,21 @@ Starting test command server on port 8082
 ======== Running on http://0.0.0.0:8082 ========
 (Press CTRL+C to quit)
 ```
+
+## Build and launch Scala HCD to launch commands
+
+Following instructions at:
+
+<https://github.com/tmtsoftware/pycsw/tree/master/tests>
+
+```
+source configure_env.sh
+cd pycsw/tests/
+cd testSupport
+sbt stage
+test-deploy/target/universal/stage/bin/test-container-cmd-app --local test-deploy/src/main/resources/TestContainer.conf
+```
+
+We first need to have the Python component running, then once we launch
+the Java component we can see the commands coming in looking through the logs
+of the Python server.
