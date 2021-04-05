@@ -1,6 +1,8 @@
 # IRIS DRS Assembly
 TMT-IRIS Data Reduction System Assembly
 
+Testing on `irisdev`, a Virtual Machine setup by Chris with CSW services already preinstalled.
+
 ## Start and stop CSW services
 
     bash csw_start.sh
