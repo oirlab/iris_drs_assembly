@@ -42,3 +42,9 @@ test-deploy/target/universal/stage/bin/test-container-cmd-app --local test-deplo
 We first need to have the Python component running, then once we launch
 the Java component we can see the commands coming in looking through the logs
 of the Python server.
+
+### Modify the Scala HCD
+
+We can modify what commands the Scala HCD sends to Python:
+
+https://github.com/tmtsoftware/pycsw/blob/7bf54d1883c5ad8e2276a26672e0c4c245fd3901/tests/testSupport/test-assembly/src/main/scala/org/tmt/csw/testassembly/TestAssemblyHandlers.scala#L253-L260
