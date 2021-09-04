@@ -32,11 +32,7 @@ Following instructions at:
 <https://github.com/tmtsoftware/pycsw/tree/master/tests>
 
 ```
-source configure_env.sh
-cd pycsw/tests/
-cd testSupport
-sbt stage
-test-deploy/target/universal/stage/bin/test-container-cmd-app --local test-deploy/src/main/resources/TestContainer.conf
+bash launch_HCD.sh
 ```
 
 We first need to have the Python component running, then once we launch
