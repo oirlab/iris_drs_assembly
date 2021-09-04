@@ -1,0 +1,1 @@
+tmtrun iris_pipeline.pipeline.ProcessFlatfieldL2 iris_example_data/raw_flat_frame_cal.fits
