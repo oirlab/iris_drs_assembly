@@ -9,14 +9,19 @@ from csw.ControlCommand import ControlCommand
 from csw.CurrentState import CurrentState
 from csw.Parameter import Parameter
 
+import os
+
+import iris_pipeline
+
+iris_pipeline.monkeypatch_jwst_datamodels()
+
 
 class MyComponentHandlers(ComponentHandlers):
     prefix = "CSW.pycswTest"
 
     async def longRunningCommand(self, runId: str, command: ControlCommand) -> CommandResponse:
-        await asyncio.sleep(3)
-        print("Long running task completed")
-        # TODO: Do this in a timer task
+        pipeline = iris_pipeline.pipeline.ProcessImagerL2Pipeline
+        pipeline.call("association.json", config_file="image2_iris.cfg")
         await self.publishCurrentStates()
         return Completed(runId)
 
