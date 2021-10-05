@@ -1,5 +1,12 @@
-# IRIS DRS Assembly
-TMT-IRIS Data Reduction System Assembly
+# TMT-IRIS Data Reduction System Assembly
+
+[![Documentation Status](https://readthedocs.org/projects/iris-drs-assembly/badge/?version=latest)](https://iris-drs-assembly.readthedocs.io/en/latest/?badge=latest)
+
+## Documentation
+
+<https://iris-drs-assembly.readthedocs.io/>
+
+## Testing on `irisdev`
 
 Testing on `irisdev`, a Virtual Machine setup by Chris with CSW services already preinstalled.
 
