@@ -6,9 +6,11 @@ the Thirty Meter Telescope observatory to manage the real-time reduction of IRIS
 The role of the Assembly is to receive commands, gather telemetry, configure and launch
 the data reduction pipeline implemented as a separate package: `iris_pipeline <https://github.com/oirlab/iris_pipeline>`_.
 
-.. image:: _static/architecture.png
+.. figure:: _static/architecture.png
     :width: 700
-    :alt: Alternative text
+    :alt: Flowchart of the architecture of the DRS Assembly at the TMT Observatory
+
+    Architecture of the deployment of the DRS Assembly and the rest of the IRIS instrument at the TMT Observatory
 
 .. toctree::
    :maxdepth: 2
