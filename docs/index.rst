@@ -12,6 +12,7 @@ Architecture
 .. figure:: _static/architecture.png
     :width: 700
     :alt: Flowchart of the architecture of the DRS Assembly at the TMT Observatory
+
     Architecture of the deployment of the DRS Assembly and the rest of the IRIS instrument at the TMT Observatory
 
 See the figure above for a chart of the system architecture, the DRS Assembly is a Python service which is always in execution on the Pipeline computer at the TMT Observatory and is in charge of subscribing to the events stream of the Common Software (CSW).
@@ -39,6 +40,13 @@ Description of the DRS Assembly use cases:
 
    use_cases
 
+Data rates
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   data_rates
 
 
 Indices and tables
