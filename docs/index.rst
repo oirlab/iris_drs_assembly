@@ -7,7 +7,7 @@ The role of the Assembly is to receive commands, gather telemetry, configure and
 the data reduction pipeline implemented as a separate package: `iris_pipeline <https://github.com/oirlab/iris_pipeline>`_.
 
 .. image:: _static/architecture.png
-    :width: 400
+    :width: 700
     :alt: Alternative text
 
 .. toctree::
