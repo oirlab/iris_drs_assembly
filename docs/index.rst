@@ -24,8 +24,16 @@ The `iris_pipeline` Python process, once properly configured with the right para
 
 Once the pipelines have completed execution, they will write the output FITS files to the Reduced disk. At this point the DRS Assembly can publish the event of "execution completed".
 
+DRS Assembly Design
+-------------------
+
+TMT has released a Python interface to the Observatory middleware CSW, named PyCSW and published `on Github <https://github.com/tmtsoftware/csw-python>`_.
+`PyCSW` is based on Python async co-routines to handle asynchronous commands and execute background processes.
+
+We implemented a proof-of-concept DRS Assembly in Python relying on PyCSW in the `oirlab/iris_drs_assembly repository on Github <https://github.com/oirlab/iris_drs_assembly>`_, it is currently capable of accepting a command from a Scala component via CSW and then execute in a long-running co-routine a simple `iris_pipeline` pipeline for reducing an input raw science frame to a reduced frame. It currently doesn't handle telemetry or any configuration of the pipeline.
+
 Telemetry handling
-------------------
+^^^^^^^^^^^^^^^^^^
 
 `iris_pipeline` requires that all the metadata necessary for processing will be available in the headers of the raw science frame FITS files, therefore, the DRS Assembly will also need to gather the necessary Telemetry and add it to the FITS files.
 Once we have a clearer picture on how Telemetry will be handled we can improve the design of this functionality. For example if there will be a way to access Telemetry from Python or C easily, we could have the first step of the processing pipeline collect the relevant telemetry and add it to the metadata. In this case the DRS Assembly wouldn't need to accomplish this task at all.
